@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Rapid-Ex</title>
+    @Styles.Render("~/Content/css")
+    <link href="~/Content/css/bootstrap.css" type="text/css" rel="stylesheet" />
+    <link href="~/Content/Site.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @@media screen and (max-width: 578px) {
+
+            .rapidexlogo-mini {
+                display:none;
+            }
+
+            .rapidexlogo {
+                display: block;
+                width: 7.2rem;
+            }
+
+            .bg-rapidexmenu {
+                color: #7B0323;
+                background-color: white;
+                padding-top: 1em;
+                padding-bottom: 1em;
+                padding-left: 0.6rem;
+                padding-right: 0.6rem;
+            }
+
+            .url-logo {
+                display: inline-block;
+                font-weight:bold;
+                padding-left:1rem;
+                padding-right:1rem;
+            }
+
+            .url {
+                display: none;
+            }
+            /*.navigate a {
+                display: none;
+            }
+
+                .navigate a.icon {
+                    float: right;
+                    display: block;
+                }*/
+        }
+
+        @@media (max-width:577px) {
+
+            .navigate.responsive {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+                .navigate.responsive a.icon {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+
+                .navigate.responsive a {
+                    float: none;
+                    display: block;
+                    /*text-align: left !important;*/
+                }
+           
+           
+            
+        }
+        @@media (min-width:578px) {
+            .url-logo {
+                display: none;
+               font-weight:bold;
+            }
+
+            .rapidexlogo {
+                display: block;
+                width: 11.2rem;
+            }
+            .url {
+         
+            }
+
+        }
+    </style>
+</head>
+<body class="bg-rapidex" >
+    <div class="d-flex sticky-top bg-rapidexmenu shadow border-bottom" style="background-color:white;" >   
+        <div class="col-4">
+            <img class="rapidexlogo " style=" " src="~/Content/img/Logo.png" />
+            @*<img class="rapidexlogo-mini" style=" width: 2.2rem" src="~/Content/img/Logo-Mini.png" />*@
+        </div>
+        <div class="ml-auto navigate col-8" id="nav" style="text-align:right!important;align-self:center">           
+            <a href="@Url.Action("Index","Home")" class="bg-rapidex pl-2 " style="font-size:1.2rem; text-decoration:none;background-color:transparent;"><b class="url">Home</b><i class="fa fa-home url-logo"></i></a>
+            <a href="#" class="bg-rapidex pl-2" style="font-size: 1.2rem; text-decoration: none; display: none;"><b>Rapid-Ex</b></a>
+            <a href="@Url.Action("Citrine","Home")" class="bg-rapidex pl-2 " style="font-size: 1.2rem; text-decoration:none;display:none;"><b>Citrine</b></a>
+            <a href="#divContactUs" class="bg-rapidex ml-auto pl-2" style="font-size: 1.2rem; text-decoration:none;background-color:transparent;"><b class="url">Contact Us</b> <i class="fa fa-phone url-logo" aria-hidden="true"></i></a>
+            @*<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>*@
+
+        </div>
+
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+      
+    </div>
+    <script>
+        //function myFunction() {
+        //    var x = document.getElementById("nav");
+        //    if (x.className === "ml-auto navigate col-8") {
+        //        x.className += " responsive";
+        //    } else {
+        //        x.className = "ml-auto navigate col-8";
+        //    }
+        //};
+    </script>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

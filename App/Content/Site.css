@@ -1,0 +1,163 @@
+﻿
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+    font-family:'Poppins',Helvetica,Arial,Lucida,sans-serif;
+   
+
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 17.5rem;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.bg-rapidex {
+    color: #7B0323;
+}
+
+.bg-rapidextext {
+    color: #7B0323;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius:10px;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    border-radius: 10px;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;           
+}
+.bg-rapidexheader {
+    font-weight: 800;
+    font-size: 1.7rem;
+    color: #7B0323;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    border-radius: 10px;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+}
+
+
+.rapideximg {
+    /*height:20rem;
+    width:20rem;*/
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.bg-rapidexmenu {
+    color: #7B0323;
+    background-color:white;
+    padding-top: 2em;
+    padding-bottom: 2em;    
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+}
+.bg-rapidex:hover{
+    background-color:#fff;
+    color:#cc0066;
+}
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+.divKnowMore:hover {
+    color:#cc0066;
+    background-color:white;
+}
+.divKnowMore {
+    background-color: #7B0323;
+    color: white;
+    font-size: 1.6vw;
+}
+.bg-rapidexbanner{
+     color: #7B0323;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius:10px;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    border-radius: 10px;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+}
+.icon{
+     display: none;
+}
+
+.rapidexlogo {
+}
+.cards{
+    border:solid;
+    border-color:#000;
+    margin-left:3.6%;
+    margin-right:3.6%;
+    margin-top:2.6%;
+    margin-bottom:2.6%;
+    border-radius:12px;
+}
+.card-title{
+    text-align:center;
+    color:#ffe924;
+}
+.card-img-top{
+   border-radius:0.938rem;
+   height:auto;
+   
+}
+.card-text{
+   color:#ffe924 !important;
+}
+.citrine-text{
+    color:#ffe924;
+}
+.card-body{
+    border-radius:1rem;
+    background-color:#df682d;
+}
+.card-deck{
+    flex-flow:row wrap;
+}
